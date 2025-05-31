@@ -7,19 +7,20 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            J-Frozz Engineering Services lies in the blend of professional, specialized and highly focused operation. We offer the following services:
           </p>
         </div>
-        <div className="row">
+        <div className="row service-container">
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-4">
                   {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+                  <div className="card">
+                    <img src={d.img} alt=""/>
+                    <div className="service-content">
+                      <h3>{d.name}</h3>
+                      <p>{d.text}</p>
+                    </div>
                   </div>
                 </div>
               ))
