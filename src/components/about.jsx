@@ -13,27 +13,38 @@ export const About = (props) => {
             <div className="about-text">
               <h2>About Us</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Why Choose Us?</h3>
+              <h3>OUR MISSION</h3>
+              <p>{props.data ? props.data.mission : "loading..."}</p>
+              <h3>OUR VISION</h3>
+              <p>{props.data ? props.data.vison : "loading..."}</p>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
+                  <p>Our keys of competence:</p>
                   <ul>
                     {props.data
-                      ? props.data.Why.map((d, i) => (
+                      ? props.data.competence.map((d, i) => (
                           <li key={`${d}-${i}`}>{d}</li>
                         ))
                       : "loading"}
                   </ul>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-xs-12">
+                  <p>We believe in:</p>
                   <ul>
                     {props.data
-                      ? props.data.Why2.map((d, i) => (
+                      ? props.data.belief.map((d, i) => (
                           <li key={`${d}-${i}`}> {d}</li>
                         ))
                       : "loading"}
                   </ul>
                 </div>
               </div>
+              <a
+                  href="/img/j-frozz-company-profile.pdf"
+                  className="btn btn-custom btn-lg page-scroll"
+                >
+                  Read More
+                </a>{" "}
             </div>
           </div>
         </div>

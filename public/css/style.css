@@ -43,13 +43,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #608dfd;
+  color: #fcba03;
   font-weight: 400;
 }
 a:hover,
 a:focus {
-  text-decoration: none;
-  color: #608dfd;
+  text-decoration: underline;
+  /* color: #fcba03; */
 }
 ul,
 ol {
@@ -75,6 +75,15 @@ hr {
   padding: 15px;
   transition: all 0.8s;
 }
+.logo {
+  padding: 0 0 0 0;
+}
+.logo img{
+  height: 60px;
+  padding: 0 0 0 0;
+  border-radius: 0px;
+  object-fit: cover;
+}
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
@@ -86,6 +95,7 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  padding: 0px 0px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
@@ -104,7 +114,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +135,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -135,10 +145,10 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #608dfd;
+  border-color: #fcba03;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: #fcba03;
 }
 .section-title {
   margin-bottom: 70px;
@@ -152,7 +162,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #EFBF38 0%, #E08600 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -166,8 +176,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #EFBF38;
+  background-image: linear-gradient(to right, #EFBF38 0%, #E08600 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +194,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #E08600;
 }
 .btn:active,
 .btn.active {
@@ -216,7 +226,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(117, 110, 110, 0.2);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -229,7 +239,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #EFBF38;
 }
 .intro p {
   color: #fff;
@@ -257,7 +267,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -276,7 +286,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #EFBF38 0%, #E08600 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -291,7 +301,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #EFBF38;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -310,15 +320,48 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%);
+}
+
+#services .service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.card {
+  width: 325px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 20px
+}
+#services h2{
   color: #fff;
 }
-#services .service-desc {
-  margin: 10px 10px 20px;
-}
-#services h2 {
+#services p{
   color: #fff;
 }
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#services .service-content {
+  padding: 16px
+}
+#services .service-content h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#services .service-content p {
+  color: #777;
+  line-height: 1.3;
+}
+
 #services .section-title h2::after {
   position: absolute;
   content: "";
@@ -334,71 +377,33 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-#services h3 {
-  font-weight: 500;
-  padding: 5px 0;
-  color: #fff;
-}
-#services p {
-  color: rgba(255, 255, 255, 0.75);
-}
-#services .service-desc {
-  margin-bottom: 40px;
-}
+
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
-  padding: 0;
+  padding-bottom: 5rem;
 }
-.portfolio-item .hover-bg {
-  overflow: hidden;
-  position: relative;
-  margin: 0;
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.hover-bg .hover-text {
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
-  );
-  padding: 30% 0 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.5s;
+.img-responsive {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 2px 2px;
 }
-.hover-bg .hover-text > h4 {
-  opacity: 0;
-  color: #fff;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  transition: all 0.3s;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.hover-bg:hover .hover-text > h4 {
-  opacity: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-.hover-bg:hover .hover-text {
-  opacity: 1;
-}
+
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
@@ -460,7 +465,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #E08600 0%, #EFBF38 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -470,7 +475,7 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
+  color: #011B2F;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -485,7 +490,7 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
+  color: #011B2F;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -504,8 +509,8 @@ header .intro-text {
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: #fff;
+  background: #011B2F;
 }
 label {
   font-size: 12px;
@@ -552,21 +557,27 @@ label {
   margin: 20px 0;
 }
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
+  color: #011B2F;
   margin-bottom: 10px;
   display: block;
 }
 #contact .contact-item i.fa {
   margin-right: 10px;
 }
+
+#contact p, a {
+  color: rgba(255, 255, 255, 1);
+}
+
 #contact .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
-}
-#contact .social ul li {
   display: inline-block;
+}
+#contact .social a {
+  
   margin: 0 20px;
 }
 #contact .social i.fa {
@@ -574,29 +585,14 @@ label {
   width: 48px;
   height: 48px;
   padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #011B2F;
+  color: #011B2F;
   border-radius: 50%;
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
-}
-/* Footer Section*/
-#footer {
-  background: #f6f6f6;
-  padding: 30px 0;
-}
-#footer p {
-  color: #888;
-  font-size: 14px;
-}
-#footer a {
-  color: #608dfd;
-}
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
+  color: #fcba03;
+  background: #011B2F;
 }
 
 @media (max-width: 768px) {
