@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Aptos", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -11,7 +11,7 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Aptos", sans-serif;
 }
 h2 {
   text-transform: uppercase;
@@ -90,7 +90,7 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: "Aptos", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
@@ -229,20 +229,19 @@ a:focus,
   background: rgba(117, 110, 110, 0.2);
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
+  font-family: "Aptos", sans-serif;
+  color: #E08600;
   font-size: 82px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
 .intro h1 span {
-  font-weight: 800;
+  font-weight: 500;
   color: #EFBF38;
 }
 .intro p {
-  color: #fff;
+  color: #302f2f;
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
@@ -515,7 +514,7 @@ header .intro-text {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Aptos", sans-serif;
   float: left;
 }
 #contact .form-control {

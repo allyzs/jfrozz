@@ -1,54 +1,53 @@
 {
   "Header": {
-    "title": "J-Frozz Engineering Services",
-    "paragraph": "Your Trusted Partner for Comprehensive Design and Installation Services in the fields of Electro-Mechanical and Civil Engineering."
+    "title": "J-FROZZ Engineering Services and Electro-Mechanical Trading",
+    "paragraph": "Your trusted partner in Engineering and Supply in the fields of Electro-Mechanical and Civil Engineering."
   },
   "About": {
-    "paragraph": "The company is an engineering firm specializing in civil and electro-mechanical solutions. With a team of highly skilled professionals who have extensive expertise in civil, electrical, and mechanical engineering, we deliver innovative and integrated services to meet the diverse needs of our clients.",
-    "mission": "Our Mission is to provide comprehensive, innovative, and reliable engineering solutions that exceed our clients' expectations.",
-    "vison": "Our Vision is to achieve 100% customer satisfaction by delivering Quality Products and Services at an affordable cost.",
-    "competence": [
-      "Trust and Confidence",
-      "Transparency",
-      "Teamwork"
-    ],
-    "belief": [
-      "Motivation",
-      "Collective responsibility and leadership",
-      "Professionalism and ethics",
-      "Adding values to our client needs"
-    ]
+    "paragraph": "J-Frozz Engineering Services and Electro-Mechanical Trading is an engineering and trading firm specializing in electro-mechanical and civil engineering solutions. Through our Engineering Services, we provide end-to-end design, installation, and maintenance of HVAC, fire protection, CCTV, solar, plumbing, and mechanical systems. Complementing this, our Electro-Mechanical Trading division supplies high-quality tools, equipment, and components to support contractors, developers, and industries.",
+    "mission": "Our Mission is to provide innovative, reliable, and cost-effective electro-mechanical and civil engineering solutions, alongside high-quality products and materials, to support the success of infrastructure and industrial projects. We are committed to delivering excellence in service and supply, driven by expertise, integrity, and customer satisfaction.",
+    "vison": "Our Vision is to be a trusted and leading partner in the engineering and construction industry — known for seamlessly integrating technical services and product distribution that power progress, build sustainable communities, and shape the future of modern infrastructure at an affordable cost"
   },
   "Services": [
     {
-      "img": "img/services/supply-aircon.jpg",
-      "name": "Supply and Installation of Airconditioning Units",
-      "text": "Design, Repairs and Maintenance Services"
+      "img": "img/services/design-supply-hvac.jpg",
+      "name": "Design, Supply, and Installation of HVAC Systems",
+      "text": "Customized air conditioning solutions for residential, commercial, and industrial applications, including split-type, VRF, and PACU systems."
     },
     {
-      "img": "img/services/fire-alarm.jpg",
-      "name": "Fire Protection and Fire Detection Alarm System",
-      "text": "Design, Supply and Installation"
+      "img": "img/services/repair-aircon.jpg",
+      "name": "Air Conditioning Repair, Cleaning and Preventive Maintenance",
+      "text": "Regular maintenance and troubleshooting services to extend equipment lifespan and ensure reliable system performance."
     },
     {
-      "img": "img/services/supply-cctv.webp",
-      "name": "Closed-Circuit Telivision (CCTV)",
-      "text": "Design, Supply and Installation"
+      "img": "img/services/design-install-fdas.png",
+      "name": "Design, Supply, and Installation of Fire Protection and FDAS",
+      "text": "Complete setup of fire suppression systems and fire detection and alarm systems, including piping, sensors, alarms and compliance documentation."
+    },
+    {
+      "img": "img/services/supply-install-cctv.jpg",
+      "name": "Design, Supply, and Installation of CCTV System",
+      "text": "Provision and deployment of surveillance systems with professional installation, cabling, and system configuration."
     },
     {
       "img": "img/services/solar-panel-installation.jpg",
-      "name": "Solar Energy Powered System",
-      "text": "For Residential, Commercial, and Irrigation"
+      "name": "Solar Power System Installation",
+      "text": "End-to-end setup of solar energy systems for homes, business, and agricultrual use - including solar panels, inverters, and battery integration."
     },
     {
       "img": "img/services/plumbing.webp",
-      "name": "Plumbing Works",
-      "text": "Design, Installation, Sign and Seal"
+      "name": "Plumbing Works with Design, Installation, and Sign & Seal",
+      "text": "Full-service plumbing projects, from system design to on-site installation, with sign and seal by licensed engineers."
     },
     {
       "img": "img/services/mechanical-plan.webp",
-      "name": "Mechanical Plans",
-      "text": "Design, Sign and Seal"
+      "name": "Design and Sign & Seal of Mechanical plans",
+      "text": "Preparation and certification of mechanical plans required for regulatory approval, project compliance, and construction execution"
+    },
+    {
+      "img": "img/services/trading-services.jpg",
+      "name": "Material Supply for Electro-Mechanical Projects",
+      "text": "Through our trading arm, we provide high-quality tools, equipment, and components for mechanical, electrical, and HVAC applications."
     }
   ],
   "Projects": [
